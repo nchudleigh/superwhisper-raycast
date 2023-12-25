@@ -1,2 +1,3 @@
-# superwhisper-raycast
-superwhisper Raycast extension
+# superwhisper
+
+Start and stop recordings, open settings, and view history

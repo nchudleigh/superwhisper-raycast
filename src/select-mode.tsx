@@ -36,7 +36,7 @@ export default function Command() {
             return;
           }
           // read json file
-          const data = JSON.parse(fs.readFileSync(`${modeDirURL}/${file}`, 'utf8'));
+          const data = JSON.parse(fs.readFileSync(`${modeDirURL}/${file}`, "utf8"));
           // add to modes array
           modes.push(data);
         });

@@ -2,7 +2,7 @@ import { open } from "@raycast/api";
 import { SUPERWHISPER_BUNDLE_ID, checkSuperwhisperInstallation } from "./utils";
 
 export default async function main() {
-  const isInstalled = await checkSuperwhisperInstallation()
+  const isInstalled = await checkSuperwhisperInstallation();
   if (!isInstalled) {
     return;
   }

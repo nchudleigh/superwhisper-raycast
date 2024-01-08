@@ -16,8 +16,6 @@ interface Mode {
 }
 
 function handleSelection(item: Mode) {
-  
-
   const modeKey = item.key;
   const url = `superwhisper://mode?key=${modeKey}`;
   open(url, SUPERWHISPER_BUNDLE_ID);
@@ -28,7 +26,7 @@ export default function Command() {
 
   useEffect(() => {
     async function fetchModes() {
-      const isInstalled = await checkSuperwhisperInstallation()
+      const isInstalled = await checkSuperwhisperInstallation();
       if (!isInstalled) {
         return;
       }
